@@ -42,7 +42,7 @@ export function FeedbackCard({ item }: { item: FeedbackCardProps }) {
       </S.Wrapper>
       <S.Comments>
         <S.Icon src="/images/comments.svg" />
-        <S.Number>{item.comments?.length}</S.Number>
+        <S.Number>{!item?.comments ? 0 : item.comments?.length}</S.Number>
       </S.Comments>
     </S.Item>
   )
