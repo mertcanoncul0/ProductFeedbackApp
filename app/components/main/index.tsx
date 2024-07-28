@@ -4,7 +4,7 @@ import * as S from "./styled"
 import Datas from "@/app/data/data.json"
 
 export function Main() {
-  const sliceData = Datas.productRequests.slice(0, 6)
+  const sliceData = Datas.productRequests
 
   return (
     <S.Wrapper>
