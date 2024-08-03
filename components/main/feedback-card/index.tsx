@@ -1,35 +1,9 @@
+import { ProductRequest } from "@/types/feedback"
 import { Button } from "./category-button"
 import * as S from "./styled"
 import { Unvotes } from "./upvotes"
 
-export type FeedbackCardProps = {
-  id: number
-  title: string
-  category: string
-  upvotes: number
-  status: string
-  description: string
-  comments?: {
-    id: number
-    content: string
-    user: {
-      image: string
-      name: string
-      username: string
-    }
-    replies?: {
-      content: string
-      replyingTo: string
-      user: {
-        image: string
-        name: string
-        username: string
-      }
-    }[]
-  }[]
-}
-
-export function FeedbackCard({ item }: { item: FeedbackCardProps }) {
+export function FeedbackCard({ item }: { item: ProductRequest }) {
   return (
     <S.Item>
       <S.Wrapper>

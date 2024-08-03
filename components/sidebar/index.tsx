@@ -1,7 +1,7 @@
-import { LogoCard } from "./logo-card"
-import { RoadmapCard } from "./roadmap"
-import * as S from "./styled"
-import { TagsCard } from "./tags"
+import { LogoCard } from "./logo-card";
+import { RoadmapCard } from "./roadmap";
+import * as S from "./styled";
+import { TagsCard } from "./tags";
 
 export function Sidebar() {
   return (
@@ -10,5 +10,5 @@ export function Sidebar() {
       <TagsCard />
       <RoadmapCard />
     </S.Sidebar>
-  )
+  );
 }

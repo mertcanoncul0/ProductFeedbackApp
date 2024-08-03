@@ -1,17 +1,19 @@
-import { FeedbackCard, FeedbackCardProps } from "./feedback-card"
+import { FeedbackCard } from "./feedback-card"
 import { Header } from "./header"
+import { useFeedbackStore } from "@/store/feedback"
+import { ProductRequest } from "@/types/feedback"
+
 import * as S from "./styled"
-import Datas from "@/app/data/data.json"
 
 export function Main() {
-  const sliceData = Datas.productRequests.slice(0, 6)
+  const { productRequests } = useFeedbackStore()
 
   return (
     <S.Wrapper>
       <Header />
 
       <S.ListWrapper>
-        {sliceData.map((item: FeedbackCardProps) => (
+        {productRequests.map((item: ProductRequest) => (
           <FeedbackCard key={item.id} item={item} />
         ))}
       </S.ListWrapper>

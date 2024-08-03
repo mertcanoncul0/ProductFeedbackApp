@@ -1,9 +1,11 @@
-import { Button } from "./button"
-import { Dropdown } from "./dropdown"
-import { Logo } from "./logo"
-import * as S from "./styled"
+import { Button } from "./button";
+import { Dropdown } from "./dropdown";
+import { Logo } from "./logo";
+import * as S from "./styled";
 
 export function Header() {
+  console.log("Header");
+
   return (
     <S.Header>
       <S.Wrapper>
@@ -12,5 +14,5 @@ export function Header() {
       </S.Wrapper>
       <Button />
     </S.Header>
-  )
+  );
 }

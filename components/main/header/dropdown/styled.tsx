@@ -20,6 +20,7 @@ export const ItemList = styled.ul<{ $isOpen: boolean }>`
   opacity: 0;
   visibility: hidden;
   transition: opacity 125ms ease-in-out, visibility 125ms ease-in-out;
+  box-shadow: 0 10px 40px -7px rgba(55, 63, 105, 35%);
 
   ${({ $isOpen }) =>
     $isOpen &&

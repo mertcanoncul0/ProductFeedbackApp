@@ -1,10 +1,11 @@
-import { useState } from "react"
-import * as S from "./styled"
+import { useState } from "react";
+import * as S from "./styled";
 
 export function Dropdown() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+
   function handleToggle() {
-    setIsOpen((prev) => !prev)
+    setIsOpen((prev) => !prev);
   }
 
   return (
@@ -35,5 +36,5 @@ export function Dropdown() {
         </S.ItemList>
       </S.Item>
     </S.List>
-  )
+  );
 }
