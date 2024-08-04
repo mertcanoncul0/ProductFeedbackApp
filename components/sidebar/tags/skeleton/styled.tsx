@@ -7,8 +7,8 @@ export const SkeletonButton = styled.button`
   animation: loading 1.5s infinite;
   border-radius: 10px;
   padding: 6px 16px;
-
   color: white;
+
   @keyframes loading {
     0% {
       background-position: 200% 0;

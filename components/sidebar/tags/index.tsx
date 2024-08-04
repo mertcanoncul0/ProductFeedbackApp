@@ -20,6 +20,8 @@ export function TagsCard() {
 
   return (
     <S.TagsCard>
+      <Button name="All" active={true} handleClick={() => {}} />
+
       {categories.map(({ name, active }) => (
         <Button
           key={name}
